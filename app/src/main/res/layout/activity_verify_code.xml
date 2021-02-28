@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.VerifyCodeActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/wave"
+        android:layout_weight="2.5">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginEnd="80dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verification"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:lines="2"
+                android:textColor="#000000"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            >
+            <EditText
+                android:id="@+id/verifyCodeET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Code"
+                android:textSize="18sp"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:gravity="center"
+                android:padding="8dp"
+                android:layout_margin="5dp"/>
+            <Button
+                android:id="@+id/verifyCodeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:onClick="verifyCode"
+                android:backgroundTint="#0099FF"
+                android:text="Verify" />
+
+            <TextView
+                android:id="@+id/countDownTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1:00"
+                android:textSize="16sp"
+                android:textColor="#FF0000"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/resendCodeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:backgroundTint="#0099FF"
+                android:text="Resend Code"
+                android:onClick="resendCode"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
